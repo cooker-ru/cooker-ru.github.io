@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /footer/
+
+Host: https://cooker-ru.github.io
