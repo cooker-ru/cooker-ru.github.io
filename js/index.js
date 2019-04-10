@@ -245,4 +245,11 @@ function animationLazy(){
 };
 document.addEventListener('DOMContentLoaded', animationLazy);
 
+document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.materialboxed');
+   var instances = M.Materialbox.init(elems, {
+     inDuration: 700
+   });
+ });
+
 // ----------- index.js ------------- \\
