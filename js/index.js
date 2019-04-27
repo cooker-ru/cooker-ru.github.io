@@ -215,43 +215,4 @@ document.addEventListener('DOMContentLoaded', function() {
    });
  });
 
-// ------------ svg animation ----------- \\
-
-// function animationLazy(){
-//
-//   document.onreadystatechange = () => {
-//
-//     if (document.readyState === 'complete') {
-//
-//       // let el = document.querySelector('#meat');
-//       // let animationMeat = new LazyLinePainter(el, {
-//       //   "ease":"easeLinear",
-//       //   "strokeWidth": 5,
-//       //   "strokeOpacity": 1,
-//       //   "strokeColor": "#ffffff",
-//       //   "strokeCap": "square",
-//       //   "delay" : 5000,
-//       //   "reverse" : true,
-//       //   "repeat": 0
-//       // });
-//       // animationMeat.paint();
-//
-//       let elCat = document.querySelector('#cat');
-//       let animationCat = new LazyLinePainter(elCat, {
-//         "strokeWidth": 3,
-//         "strokeOpacity": 1,
-//         "strokeColor": "#26A69A",
-//         "strokeCap": "square",
-//         "delay" : 7000,
-//         "repeat": 0
-//       });
-//       animationCat.paint();
-//     }
-//   }
-//
-// };
-// document.addEventListener('DOMContentLoaded', animationLazy);
-//
-
-
 // ----------- index.js ------------- \\
