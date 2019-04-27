@@ -208,6 +208,13 @@ function bbq() {
 }
 document.addEventListener('DOMContentLoaded', bbq);
 
+document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.materialboxed');
+   var instances = M.Materialbox.init(elems, {
+     inDuration: 700
+   });
+ });
+
 // ------------ svg animation ----------- \\
 
 // function animationLazy(){
@@ -245,11 +252,6 @@ document.addEventListener('DOMContentLoaded', bbq);
 // };
 // document.addEventListener('DOMContentLoaded', animationLazy);
 //
-// document.addEventListener('DOMContentLoaded', function() {
-//    var elems = document.querySelectorAll('.materialboxed');
-//    var instances = M.Materialbox.init(elems, {
-//      inDuration: 700
-//    });
-//  });
+
 
 // ----------- index.js ------------- \\
