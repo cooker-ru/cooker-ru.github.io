@@ -16,6 +16,7 @@ h5 { font-size: 43px }
   height: 100vh;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .header::before {
   content: '';
@@ -33,7 +34,7 @@ h5 { font-size: 43px }
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  opacity: .25;
+  opacity: .3;
   z-index: -1;
 }
 
@@ -201,6 +202,7 @@ h5 { font-size: 43px }
   margin: 100px auto;
   position: relative;
   z-index: 3;
+  margin-top: 15%;
 }
 .caption { text-align: center; color: #6e6e6e; }
 .caption__span { color: #fc7254 }
@@ -211,6 +213,7 @@ h5 { font-size: 43px }
   color: #5b5b5b;
   font-size: 19px;
   font-weight: 600;
+  line-height: 1.8em;
 }
 
 .fill {
