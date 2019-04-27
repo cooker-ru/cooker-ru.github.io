@@ -2,6 +2,10 @@
 
 function menu() {
 
+  let header = document.getElementsByClassName('heder')[0];
+  let greeting = document.getElementsByClassName('greeting')[0];
+  let fill = document.getElementsByClassName('fill')[0];
+
   let logo = document.querySelector('.logo');
   let headerNavbar = document.querySelector('.header__navbar');
   let menuNavbar = headerNavbar.querySelector('.menu__navbar');
@@ -45,6 +49,16 @@ function menu() {
       logo.classList.remove('logo__menu__show');
     }
   };
+
+  window.onscroll = () => {
+    let wOffset = Math.floor(window.pageYOffset);
+    let strResult = `${0}.${wOffset}`;
+    let getResult = 1 - Number(strResult);
+    greeting.style.transform = `translateY(${window.pageYOffset/3.5}%)`;
+    greeting.style.opacity = `${(getResult).toFixed(1)}`;
+    fill.style.opacity = `${(getResult - 0.5).toFixed(1)}`;
+  };
+
 }
 document.addEventListener('DOMContentLoaded', menu);
 
@@ -216,3 +230,19 @@ document.addEventListener('DOMContentLoaded', function() {
  });
 
 // ----------- index.js ------------- \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
